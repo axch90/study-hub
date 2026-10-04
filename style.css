@@ -1,0 +1,828 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #173b6c;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Home Hero */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #dcecff;
+}
+
+
+.hero h1 {
+    font-size: 42px;
+    color: #173b6c;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    background-color: #173b6c;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+
+.button:hover {
+    background-color: #0d274a;
+}
+
+
+/* Sections */
+
+.section {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+
+.section h2 {
+    margin-bottom: 30px;
+    color: #173b6c;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 8%;
+}
+
+
+.card {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+
+.card h2,
+.card h3 {
+    color: #173b6c;
+    margin-bottom: 12px;
+}
+
+
+/* About */
+
+.about {
+    background-color: white;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+
+.about h2 {
+    color: #173b6c;
+    margin-bottom: 20px;
+}
+
+
+/* Page Header */
+
+.page-header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #dcecff;
+}
+
+
+.page-header h1 {
+    color: #173b6c;
+    font-size: 36px;
+}
+
+
+/* Search */
+
+.search-section {
+    text-align: center;
+    padding: 30px;
+}
+
+
+#searchBox {
+    width: 70%;
+    max-width: 600px;
+    padding: 15px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+
+/* Materials */
+
+.materials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 8%;
+}
+
+
+.material-card {
+    background-color: white;
+    width: 320px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+
+.material-card h2 {
+    color: #173b6c;
+    margin-bottom: 10px;
+}
+
+
+.material-card p {
+    margin-bottom: 20px;
+}
+
+
+/* View Button */
+
+.view-button {
+    display: inline-block;
+    background-color: #173b6c;
+    color: white;
+    text-decoration: none;
+    padding: 9px 15px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+
+/* Download Button */
+
+.download-button {
+    display: inline-block;
+    background-color: #228b22;
+    color: white;
+    text-decoration: none;
+    padding: 9px 15px;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #173b6c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    #searchBox {
+        width: 90%;
+    }
+
+    .card,
+    .material-card {
+        width: 90%;
+    }
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef6ff;
+    color: #173f73;
+}
+
+
+/* MAIN PAGE */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* MAIN CONTENT */
+
+.login-wrapper {
+    flex: 1;
+
+    width: 100%;
+    max-width: 1450px;
+
+    margin: auto;
+
+    padding: 35px 45px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.35fr 1fr;
+
+    gap: 35px;
+
+    align-items: center;
+}
+
+
+/* LEFT SIDE */
+
+.login-left {
+    text-align: center;
+}
+
+.tagline {
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 500;
+
+    line-height: 1.4;
+
+    margin-bottom: 25px;
+}
+
+
+/* SIMPLE BOOK IMAGE */
+
+.book-illustration {
+    width: 270px;
+    height: 210px;
+
+    margin: auto;
+
+    position: relative;
+}
+
+
+/* Books */
+
+.book {
+    position: absolute;
+
+    width: 220px;
+    height: 38px;
+
+    left: 20px;
+
+    border-radius: 6px;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.book-1 {
+    bottom: 10px;
+    background: #f4b51f;
+    transform: rotate(-3deg);
+}
+
+.book-2 {
+    bottom: 47px;
+    background: #245b99;
+    transform: rotate(2deg);
+}
+
+.book-3 {
+    bottom: 84px;
+    background: white;
+    border: 3px solid #245b99;
+}
+
+
+/* Graduation cap */
+
+.graduation-cap {
+    position: absolute;
+
+    top: 0;
+    left: 45px;
+
+    width: 160px;
+    height: 90px;
+}
+
+.cap-top {
+    width: 150px;
+    height: 55px;
+
+    background: #123f78;
+
+    clip-path: polygon(
+        50% 0,
+        100% 50%,
+        50% 100%,
+        0 50%
+    );
+}
+
+.cap-base {
+    position: absolute;
+
+    top: 48px;
+    left: 25px;
+
+    width: 105px;
+    height: 22px;
+
+    background: #164b88;
+
+    border-radius: 0 0 20px 20px;
+}
+
+.tassel {
+    position: absolute;
+
+    top: 28px;
+    right: 0;
+
+    width: 5px;
+    height: 60px;
+
+    background: #f2b820;
+}
+
+
+/* Plant */
+
+.plant {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    width: 60px;
+    height: 125px;
+}
+
+.pot {
+    position: absolute;
+
+    bottom: 0;
+    left: 8px;
+
+    width: 45px;
+    height: 50px;
+
+    background: #f3f3f3;
+
+    border-radius: 3px 3px 15px 15px;
+}
+
+.leaf {
+    position: absolute;
+
+    width: 28px;
+    height: 50px;
+
+    background: #31a69b;
+
+    border-radius: 100% 0 100% 0;
+}
+
+.leaf-1 {
+    top: 35px;
+    left: 18px;
+    transform: rotate(-30deg);
+}
+
+.leaf-2 {
+    top: 20px;
+    left: 30px;
+    transform: rotate(30deg);
+}
+
+.leaf-3 {
+    top: 50px;
+    left: 5px;
+    transform: rotate(-60deg);
+}
+
+
+/* CENTER CARD */
+
+.login-card {
+    width: 100%;
+    max-width: 570px;
+
+    margin: auto;
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 28px 48px 30px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(25,65,110,0.12);
+}
+
+
+/* LOGO */
+
+.study-logo {
+    width: 75px;
+    height: 65px;
+
+    margin: auto;
+
+    position: relative;
+}
+
+.logo-cap-top {
+    width: 75px;
+    height: 35px;
+
+    background: #16457d;
+
+    clip-path: polygon(
+        50% 0,
+        100% 50%,
+        50% 100%,
+        0 50%
+    );
+}
+
+.logo-book {
+    width: 50px;
+    height: 25px;
+
+    position: absolute;
+
+    top: 30px;
+    left: 13px;
+
+    border: 5px solid #16457d;
+
+    border-top: none;
+
+    border-radius: 0 0 12px 12px;
+}
+
+
+/* HEADINGS */
+
+.login-card h1 {
+    font-size: 34px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 3px;
+}
+
+.subtitle {
+    font-size: 17px;
+
+    color: #63758a;
+
+    margin-bottom: 20px;
+}
+
+.login-card h2 {
+    font-size: 31px;
+
+    margin-bottom: 7px;
+}
+
+.login-description {
+    color: #718096;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+
+/* FORM */
+
+.login-card form {
+    text-align: left;
+}
+
+.login-card label {
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #27394e;
+
+    margin-bottom: 7px;
+
+    margin-top: 14px;
+}
+
+
+/* INPUT */
+
+.input-container {
+    width: 100%;
+    height: 48px;
+
+    border: 1px solid #cbd4df;
+
+    border-radius: 7px;
+
+    display: flex;
+
+    align-items: center;
+
+    background: white;
+}
+
+.input-container:focus-within {
+    border-color: #173f73;
+}
+
+.input-icon {
+    width: 42px;
+
+    text-align: center;
+
+    font-size: 19px;
+}
+
+.input-container input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    font-size: 14px;
+
+    padding-right: 10px;
+}
+
+
+/* BUTTON */
+
+.login-button {
+    width: 100%;
+
+    height: 50px;
+
+    margin-top: 22px;
+
+    background: #17457e;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: #0d315c;
+}
+
+.arrow {
+    margin-left: 8px;
+    font-size: 22px;
+}
+
+
+/* BOTTOM TEXT */
+
+.contact-text {
+    margin-top: 18px;
+
+    font-size: 12px;
+
+    color: #17457e;
+}
+
+.bottom-text {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 22px;
+
+    color: #718096;
+
+    font-size: 13px;
+}
+
+.bottom-text span {
+    width: 70px;
+    height: 1px;
+
+    background: #d4d9df;
+}
+
+
+/* RIGHT SIDE */
+
+.login-right {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 35px;
+}
+
+.feature {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.feature-icon {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #dcecff;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 25px;
+}
+
+.feature-content h3 {
+    font-size: 16px;
+
+    margin-bottom: 6px;
+}
+
+.feature-content p {
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #526981;
+}
+
+
+/* FOOTER */
+
+.login-footer {
+    height: 58px;
+
+    background: #173f73;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 14px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .login-wrapper {
+        grid-template-columns: 0.8fr 1.5fr 0.8fr;
+
+        gap: 15px;
+
+        padding: 25px 20px;
+    }
+
+    .tagline {
+        font-size: 23px;
+    }
+
+    .login-card {
+        padding: 25px 30px;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+    .login-wrapper {
+        display: block;
+
+        padding: 20px;
+    }
+
+    .login-left,
+    .login-right {
+        display: none;
+    }
+
+    .login-card {
+        max-width: 500px;
+    }
+
+}

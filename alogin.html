@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Study Hub - Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+    <main class="login-wrapper">
+
+        <!-- LEFT SIDE -->
+        <section class="login-left">
+
+            <div class="tagline">
+                Better Notes<br>
+                Brighter Future
+            </div>
+
+            <!-- Books Illustration -->
+            <div class="book-illustration">
+
+                <div class="graduation-cap">
+                    <div class="cap-top"></div>
+                    <div class="cap-base"></div>
+                    <div class="tassel"></div>
+                </div>
+
+                <div class="book book-1"></div>
+                <div class="book book-2"></div>
+                <div class="book book-3"></div>
+
+                <div class="plant">
+                    <div class="leaf leaf-1"></div>
+                    <div class="leaf leaf-2"></div>
+                    <div class="leaf leaf-3"></div>
+                    <div class="pot"></div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CENTER LOGIN CARD -->
+        <section class="login-card">
+
+            <!-- Study Hub Logo -->
+            <div class="study-logo">
+
+                <div class="logo-cap">
+                    <div class="logo-cap-top"></div>
+                    <div class="logo-book"></div>
+                </div>
+
+            </div>
+
+            <h1>STUDY HUB</h1>
+
+            <p class="subtitle">
+                Student Notes &amp; Study Material
+            </p>
+
+
+            <h2>Login</h2>
+
+            <p class="login-description">
+                Access your study materials and resources
+            </p>
+
+
+            <form onsubmit="loginUser(event)">
+
+                <!-- EMAIL -->
+                <label for="username">
+                    Username / Email
+                </label>
+
+                <div class="input-container">
+
+                    <span class="input-icon">
+
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="8" r="4"></circle>
+                            <path d="M4 21c0-4 3-7 8-7s8 3 8 7"></path>
+                        </svg>
+
+                    </span>
+
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Enter your email or username"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- PASSWORD -->
+                <label for="password">
+                    Password
+                </label>
+
+                <div class="input-container">
+
+                    <span class="input-icon">
+
+                        <svg viewBox="0 0 24 24">
+                            <rect x="5" y="10" width="14" height="10" rx="2"></rect>
+                            <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+                        </svg>
+
+                    </span>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- LOGIN BUTTON -->
+                <button type="submit" class="login-button">
+
+                    <span>Login</span>
+
+                    <span class="arrow">→</span>
+
+                </button>
+
+            </form>
+
+
+            <p class="contact-text">
+                Don't have an account?
+                Contact your administrator
+            </p>
+
+
+            <div class="bottom-text">
+
+                <span></span>
+
+                Learn
+                <b>•</b>
+                Grow
+                <b>•</b>
+                Succeed
+
+                <span></span>
+
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+        <section class="login-right">
+
+
+            <!-- Study Materials -->
+            <div class="feature">
+
+                <div class="feature-icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 2h10l4 4v16H6z"></path>
+                        <path d="M16 2v5h5"></path>
+                        <path d="M9 12h6"></path>
+                        <path d="M9 16h6"></path>
+                    </svg>
+
+                </div>
+
+                <div class="feature-content">
+
+                    <h3>Study Materials</h3>
+
+                    <p>
+                        Access quality notes and
+                        study resources
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Online Resources -->
+            <div class="feature">
+
+                <div class="feature-icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="13" rx="2"></rect>
+                        <path d="M7 21h10"></path>
+                        <path d="M9 17v4"></path>
+                        <path d="M15 17v4"></path>
+                    </svg>
+
+                </div>
+
+                <div class="feature-content">
+
+                    <h3>Online Resources</h3>
+
+                    <p>
+                        Useful links and useful
+                        study tools
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Easy Access -->
+            <div class="feature">
+
+                <div class="feature-icon">
+
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="7" r="4"></circle>
+                        <path d="M4 22c0-5 3-8 8-8s8 3 8 8"></path>
+                    </svg>
+
+                </div>
+
+                <div class="feature-content">
+
+                    <h3>Easy Access</h3>
+
+                    <p>
+                        Learn anytime,<br>
+                        anywhere
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="login-footer">
+
+        © 2026 Study Hub |
+        Student Notes &amp; Study Material
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
